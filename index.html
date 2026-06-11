@@ -638,7 +638,7 @@ function renderSession(){
   const isSea=globalAlt==='sea';
 
   document.getElementById('today-date-lbl').textContent=
-    new Date(TODAY_ISO).toLocaleDateString('en-US',{month:'short',day:'numeric'});
+    new Date(_d).toLocaleDateString('en-US',{month:'short',day:'numeric'});
 
   if(!entry){
     document.getElementById('stype').textContent='Rest day';
